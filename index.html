@@ -515,6 +515,7 @@
         .timeline-item:nth-child(3)::before { border-color: var(--lavender); }
         .timeline-item:nth-child(4)::before { border-color: var(--mint); }
         .timeline-item:nth-child(5)::before { border-color: var(--amber); }
+        .timeline-item:nth-child(6)::before { border-color: var(--coral); }
 
         .timeline-date {
             font-family: var(--font-mono);
@@ -1186,6 +1187,12 @@
         <h2 class="section-title">Where I've worked</h2>
         <div class="timeline">
             <div class="timeline-item">
+                <div class="timeline-date">May 2026 – Present</div>
+                <div class="timeline-role">Software Engineer</div>
+                <div class="timeline-company">Appify Global · Melbourne, Australia</div>
+                <p class="timeline-desc">Build and deliver end-to-end SaaS applications and AI solutions for clients, covering system design, development, automation, API integrations, and deployment.</p>
+            </div>
+            <div class="timeline-item">
                 <div class="timeline-date">May 2025 – Present</div>
                 <div class="timeline-role">Associate AI Engineer</div>
                 <div class="timeline-company">BookedAI · Melbourne, Australia</div>
@@ -1734,9 +1741,15 @@
 
     const expData = [
         {
+            role: 'Software Engineer',
+            company: 'Appify Global · Melbourne, Australia',
+            color: 'var(--amber)',
+            projects: []
+        },
+        {
             role: 'Associate AI Engineer',
             company: 'BookedAI · Melbourne, Australia',
-            color: 'var(--amber)',
+            color: 'var(--coral)',
             projects: [
                 { graphic: gLangChain, name: 'LangChain Booking Agent', tags: ['RAG', 'Vector DB'] },
                 { graphic: gMCP, name: 'MCP Tools for Agent Ingestion', tags: ['MCP', 'Agentic AI'] },
